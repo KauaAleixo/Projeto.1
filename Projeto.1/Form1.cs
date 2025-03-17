@@ -21,5 +21,10 @@ namespace Projeto._1
         {
 
         }
+
+        private void Registro_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
