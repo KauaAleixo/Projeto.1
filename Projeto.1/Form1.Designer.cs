@@ -32,28 +32,30 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             bindingSource1 = new BindingSource(components);
             Registro = new TabPage();
-            label3 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            txtUsuario = new TextBox();
-            txtSenha = new TextBox();
-            txtConfirmarSenha = new TextBox();
-            btnRegistrar = new Button();
             pictureBox2 = new PictureBox();
+            btnRegistrar = new Button();
+            txtConfirmarSenha = new TextBox();
+            txtSenha = new TextBox();
+            txtUsuario = new TextBox();
+            label6 = new Label();
+            label5 = new Label();
+            label3 = new Label();
             Login = new TabPage();
-            label1 = new Label();
-            label2 = new Label();
-            txtUsuarioLogin = new TextBox();
-            txtSenhaLogin = new TextBox();
+            imgPicture1 = new PictureBox();
             btnLogin = new Button();
-            pictureBox1 = new PictureBox();
+            txtSenhaLogin = new TextBox();
+            txtUsuarioLogin = new TextBox();
+            label2 = new Label();
+            label1 = new Label();
             tabControl1 = new TabControl();
+            bindingSource2 = new BindingSource(components);
             ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             Registro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             Login.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)imgPicture1).BeginInit();
             tabControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)bindingSource2).BeginInit();
             SuspendLayout();
             // 
             // Registro
@@ -69,73 +71,11 @@
             Registro.Location = new Point(4, 24);
             Registro.Name = "Registro";
             Registro.Padding = new Padding(3);
-            Registro.Size = new Size(627, 422);
+            Registro.Size = new Size(795, 423);
             Registro.TabIndex = 1;
             Registro.Text = "Registro";
             Registro.UseVisualStyleBackColor = true;
             Registro.Click += Registro_Click;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(83, 104);
-            label3.Name = "label3";
-            label3.Size = new Size(47, 15);
-            label3.TabIndex = 1;
-            label3.Text = "Usuário";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(83, 185);
-            label5.Name = "label5";
-            label5.Size = new Size(61, 15);
-            label5.TabIndex = 3;
-            label5.Text = "Confirmar";
-            label5.Click += label5_Click;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(83, 147);
-            label6.Name = "label6";
-            label6.Size = new Size(39, 15);
-            label6.TabIndex = 4;
-            label6.Text = "Senha";
-            // 
-            // txtUsuario
-            // 
-            txtUsuario.BackColor = SystemColors.Info;
-            txtUsuario.Location = new Point(168, 104);
-            txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(115, 23);
-            txtUsuario.TabIndex = 5;
-            // 
-            // txtSenha
-            // 
-            txtSenha.BackColor = SystemColors.Info;
-            txtSenha.Location = new Point(168, 147);
-            txtSenha.Name = "txtSenha";
-            txtSenha.Size = new Size(115, 23);
-            txtSenha.TabIndex = 6;
-            // 
-            // txtConfirmarSenha
-            // 
-            txtConfirmarSenha.BackColor = SystemColors.Info;
-            txtConfirmarSenha.Location = new Point(168, 185);
-            txtConfirmarSenha.Name = "txtConfirmarSenha";
-            txtConfirmarSenha.Size = new Size(115, 23);
-            txtConfirmarSenha.TabIndex = 7;
-            // 
-            // btnRegistrar
-            // 
-            btnRegistrar.BackColor = Color.Gainsboro;
-            btnRegistrar.Location = new Point(168, 233);
-            btnRegistrar.Name = "btnRegistrar";
-            btnRegistrar.Size = new Size(100, 28);
-            btnRegistrar.TabIndex = 9;
-            btnRegistrar.Text = "Login";
-            btnRegistrar.UseVisualStyleBackColor = false;
             // 
             // pictureBox2
             // 
@@ -148,9 +88,72 @@
             pictureBox2.TabIndex = 10;
             pictureBox2.TabStop = false;
             // 
+            // btnRegistrar
+            // 
+            btnRegistrar.BackColor = Color.Gainsboro;
+            btnRegistrar.Location = new Point(168, 233);
+            btnRegistrar.Name = "btnRegistrar";
+            btnRegistrar.Size = new Size(100, 28);
+            btnRegistrar.TabIndex = 9;
+            btnRegistrar.Text = "Registrar";
+            btnRegistrar.UseVisualStyleBackColor = false;
+            // 
+            // txtConfirmarSenha
+            // 
+            txtConfirmarSenha.BackColor = SystemColors.Info;
+            txtConfirmarSenha.Location = new Point(168, 185);
+            txtConfirmarSenha.Name = "txtConfirmarSenha";
+            txtConfirmarSenha.Size = new Size(115, 23);
+            txtConfirmarSenha.TabIndex = 7;
+            // 
+            // txtSenha
+            // 
+            txtSenha.BackColor = SystemColors.Info;
+            txtSenha.Location = new Point(168, 147);
+            txtSenha.Name = "txtSenha";
+            txtSenha.Size = new Size(115, 23);
+            txtSenha.TabIndex = 6;
+            // 
+            // txtUsuario
+            // 
+            txtUsuario.BackColor = SystemColors.Info;
+            txtUsuario.Location = new Point(168, 101);
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Size = new Size(115, 23);
+            txtUsuario.TabIndex = 5;
+            txtUsuario.TextChanged += txtUsuario_TextChanged;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(83, 147);
+            label6.Name = "label6";
+            label6.Size = new Size(39, 15);
+            label6.TabIndex = 4;
+            label6.Text = "Senha";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(83, 185);
+            label5.Name = "label5";
+            label5.Size = new Size(61, 15);
+            label5.TabIndex = 3;
+            label5.Text = "Confirmar";
+            label5.Click += label5_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(83, 104);
+            label3.Name = "label3";
+            label3.Size = new Size(47, 15);
+            label3.TabIndex = 1;
+            label3.Text = "Usuário";
+            // 
             // Login
             // 
-            Login.Controls.Add(pictureBox1);
+            Login.Controls.Add(imgPicture1);
             Login.Controls.Add(btnLogin);
             Login.Controls.Add(txtSenhaLogin);
             Login.Controls.Add(txtUsuarioLogin);
@@ -159,46 +162,21 @@
             Login.Location = new Point(4, 24);
             Login.Name = "Login";
             Login.Padding = new Padding(3);
-            Login.Size = new Size(627, 422);
+            Login.Size = new Size(795, 423);
             Login.TabIndex = 0;
             Login.Text = "Login";
             Login.UseVisualStyleBackColor = true;
             Login.Click += Login_Click;
             // 
-            // label1
+            // imgPicture1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(87, 124);
-            label1.Name = "label1";
-            label1.Size = new Size(47, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Usuário";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(87, 178);
-            label2.Name = "label2";
-            label2.Size = new Size(39, 15);
-            label2.TabIndex = 1;
-            label2.Text = "Senha";
-            // 
-            // txtUsuarioLogin
-            // 
-            txtUsuarioLogin.BackColor = SystemColors.Info;
-            txtUsuarioLogin.Location = new Point(159, 124);
-            txtUsuarioLogin.Name = "txtUsuarioLogin";
-            txtUsuarioLogin.Size = new Size(115, 23);
-            txtUsuarioLogin.TabIndex = 2;
-            txtUsuarioLogin.TextChanged += textBox1_TextChanged;
-            // 
-            // txtSenhaLogin
-            // 
-            txtSenhaLogin.BackColor = SystemColors.Info;
-            txtSenhaLogin.Location = new Point(159, 178);
-            txtSenhaLogin.Name = "txtSenhaLogin";
-            txtSenhaLogin.Size = new Size(115, 23);
-            txtSenhaLogin.TabIndex = 3;
+            imgPicture1.BackgroundImage = (Image)resources.GetObject("imgPicture1.BackgroundImage");
+            imgPicture1.BackgroundImageLayout = ImageLayout.Stretch;
+            imgPicture1.Location = new Point(422, 124);
+            imgPicture1.Name = "imgPicture1";
+            imgPicture1.Size = new Size(100, 95);
+            imgPicture1.TabIndex = 5;
+            imgPicture1.TabStop = false;
             // 
             // btnLogin
             // 
@@ -209,25 +187,51 @@
             btnLogin.TabIndex = 4;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
             // 
-            // pictureBox1
+            // txtSenhaLogin
             // 
-            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(422, 124);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 95);
-            pictureBox1.TabIndex = 5;
-            pictureBox1.TabStop = false;
+            txtSenhaLogin.BackColor = SystemColors.Info;
+            txtSenhaLogin.Location = new Point(159, 178);
+            txtSenhaLogin.Name = "txtSenhaLogin";
+            txtSenhaLogin.Size = new Size(115, 23);
+            txtSenhaLogin.TabIndex = 3;
+            // 
+            // txtUsuarioLogin
+            // 
+            txtUsuarioLogin.BackColor = SystemColors.Info;
+            txtUsuarioLogin.Location = new Point(159, 124);
+            txtUsuarioLogin.Name = "txtUsuarioLogin";
+            txtUsuarioLogin.Size = new Size(115, 23);
+            txtUsuarioLogin.TabIndex = 2;
+            txtUsuarioLogin.TextChanged += textBox1_TextChanged;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(87, 178);
+            label2.Name = "label2";
+            label2.Size = new Size(39, 15);
+            label2.TabIndex = 1;
+            label2.Text = "Senha";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(87, 124);
+            label1.Name = "label1";
+            label1.Size = new Size(47, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Usuário";
             // 
             // tabControl1
             // 
             tabControl1.Controls.Add(Login);
             tabControl1.Controls.Add(Registro);
-            tabControl1.Location = new Point(-1, 0);
+            tabControl1.Location = new Point(-1, -1);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(635, 450);
+            tabControl1.Size = new Size(803, 451);
             tabControl1.TabIndex = 0;
             // 
             // Form1
@@ -244,8 +248,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             Login.ResumeLayout(false);
             Login.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)imgPicture1).EndInit();
             tabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)bindingSource2).EndInit();
             ResumeLayout(false);
         }
 
@@ -261,12 +266,13 @@
         private Label label5;
         private Label label3;
         private TabPage Login;
-        private PictureBox pictureBox1;
+        private PictureBox imgPicture1;
         private Button btnLogin;
         private TextBox txtSenhaLogin;
         private TextBox txtUsuarioLogin;
         private Label label2;
         private Label label1;
         private TabControl tabControl1;
+        private BindingSource bindingSource2;
     }
 }
