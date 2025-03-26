@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <metadata name="bindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+    <value>417, 26</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAdoAAAHaCAIAAAAohh/4AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAA/7JJREFUeF7snXV0VdfW6NfJibsnJISQQPAEdw8a3N09uEuBIkUqFFqkRmmLFHe3
+        vAAADrwBlbxySQAA/7JJREFUeF7snXV0VdfW6NfJibsnJISQQPAEdw8a3N09uEuBIkUqFFqkRmmLFHe3
         IAnurglxOW77bN97vrH2CZRy732j3/cuPGT9xrq5h0NGs/PP70zmmoJkAoFA+G8Aogx2wIcHHsACoMdH
         NoFsk3leFIDlgKJlyibTFAgsSBywdrBbgLIDwwEL+NAAVhk4AAGA53mOYngTAyYOLALYZOBBkiWQeZBZ
         5fCA/4h/tCADr5zXvkGCNx/yfQa9+QaBQCD8r8BOdChVwC6lAMz4yDaQOQBRlkAUQJRAFkDiRYmVZOW7
@@ -1348,7 +1348,7 @@
         ycnJysrKy8vLzMzMzc3Nzs7Oz8/P0NDQ0dHR0tLS09PT1NTU1dXV1tbW19fX2NjY2dnZ2tra29vb3Nzc
         3d3d3t7e39/f4ODg4eHh4uLi4+Pj5OTk5eXl5ubm5+fn6Ojo6enp6urq6+vr7Ozs7e3t7u7u7+/v8PDw
         8fHx8vLy8/Pz9PT09fX19vb29/f3+Pj4+fn5+vr6+/v7/Pz8/f39/v7+////4rBdfQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAAE0RJREFUeF7tnYly1DrWgOf9n+IfSFu73N3ZdwIJ3IRsZAGS7ra12h14ianjJNRf
+        vAAADrwBlbxySQAAE0RJREFUeF7tnYly1DrWgOf9n+IfSFu73N3ZdwIJ3IRsZAGS7ra12h14ianjJNRf
         vpeJF7k7ZPJVURQU2PpiWZaOpKN/mf8h/lX+i5fMq+xL5VX2pfIq+1J5lX2pvMq+VF5lXyqvsi+VV9mX
         yqvsS+VV9qXyKvtSeZV9qbzKvlReZV8qr7IvlVfZl8qr7EvlVfal8ir7UulMVtksM2mqnFGpMsam2nrv
         nXVGp0mSpM4CziltrQaMc9ZoVb5OSDqTtSpJjPNeaeO8Myp36c3lyeGnzY311dXV1bXh8vq7T6dX37TN
@@ -1433,7 +1433,22 @@
         JyrIFlHUdIkSOYND0mpDOd6HpNnlcv8T/wHpmoqpgYPkAwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="bindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>154, 17</value>
+  <metadata name="ID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Senha.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Email.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Senha.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Email.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
 </root>

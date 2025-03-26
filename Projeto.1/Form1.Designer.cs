@@ -48,14 +48,29 @@
             label2 = new Label();
             label1 = new Label();
             tabControl1 = new TabControl();
-            bindingSource2 = new BindingSource(components);
+            Banco = new TabPage();
+            Configuraçoes = new TabPage();
+            dataGridView1 = new DataGridView();
+            ID = new DataGridViewTextBoxColumn();
+            Senha = new DataGridViewTextBoxColumn();
+            Email = new DataGridViewTextBoxColumn();
+            label4 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            textBox3 = new TextBox();
+            domainUpDown1 = new DomainUpDown();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             Registro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             Login.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)imgPicture1).BeginInit();
             tabControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)bindingSource2).BeginInit();
+            Banco.SuspendLayout();
+            Configuraçoes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // Registro
@@ -228,11 +243,132 @@
             // 
             tabControl1.Controls.Add(Login);
             tabControl1.Controls.Add(Registro);
+            tabControl1.Controls.Add(Banco);
+            tabControl1.Controls.Add(Configuraçoes);
             tabControl1.Location = new Point(-1, -1);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
             tabControl1.Size = new Size(803, 451);
             tabControl1.TabIndex = 0;
+            // 
+            // Banco
+            // 
+            Banco.Controls.Add(dataGridView1);
+            Banco.Location = new Point(4, 24);
+            Banco.Name = "Banco";
+            Banco.Size = new Size(795, 423);
+            Banco.TabIndex = 2;
+            Banco.Text = "Banco";
+            Banco.UseVisualStyleBackColor = true;
+            // 
+            // Configuraçoes
+            // 
+            Configuraçoes.Controls.Add(domainUpDown1);
+            Configuraçoes.Controls.Add(textBox3);
+            Configuraçoes.Controls.Add(textBox2);
+            Configuraçoes.Controls.Add(textBox1);
+            Configuraçoes.Controls.Add(label9);
+            Configuraçoes.Controls.Add(label8);
+            Configuraçoes.Controls.Add(label7);
+            Configuraçoes.Controls.Add(label4);
+            Configuraçoes.Location = new Point(4, 24);
+            Configuraçoes.Name = "Configuraçoes";
+            Configuraçoes.Size = new Size(795, 423);
+            Configuraçoes.TabIndex = 3;
+            Configuraçoes.Text = "Configurações";
+            Configuraçoes.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ID, Senha, Email });
+            dataGridView1.Location = new Point(89, 73);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(594, 287);
+            dataGridView1.TabIndex = 0;
+            // 
+            // ID
+            // 
+            ID.HeaderText = "ID";
+            ID.Name = "ID";
+            // 
+            // Senha
+            // 
+            Senha.HeaderText = "Senha";
+            Senha.Name = "Senha";
+            // 
+            // Email
+            // 
+            Email.HeaderText = "Email";
+            Email.Name = "Email";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(177, 95);
+            label4.Name = "label4";
+            label4.Size = new Size(90, 15);
+            label4.TabIndex = 2;
+            label4.Text = "Endereço SMTP";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(177, 146);
+            label7.Name = "label7";
+            label7.Size = new Size(35, 15);
+            label7.TabIndex = 3;
+            label7.Text = "Porta";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(177, 196);
+            label8.Name = "label8";
+            label8.Size = new Size(101, 15);
+            label8.TabIndex = 2;
+            label8.Text = "E-mail do Usuário";
+            label8.Click += label8_Click;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(177, 247);
+            label9.Name = "label9";
+            label9.Size = new Size(93, 15);
+            label9.TabIndex = 4;
+            label9.Text = "Senha do E-mail";
+            // 
+            // textBox1
+            // 
+            textBox1.BackColor = SystemColors.Info;
+            textBox1.Location = new Point(326, 196);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(115, 23);
+            textBox1.TabIndex = 6;
+            // 
+            // textBox2
+            // 
+            textBox2.BackColor = SystemColors.Info;
+            textBox2.Location = new Point(326, 244);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(115, 23);
+            textBox2.TabIndex = 7;
+            // 
+            // textBox3
+            // 
+            textBox3.BackColor = SystemColors.Info;
+            textBox3.Location = new Point(326, 95);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(115, 23);
+            textBox3.TabIndex = 8;
+            // 
+            // domainUpDown1
+            // 
+            domainUpDown1.Location = new Point(326, 146);
+            domainUpDown1.Name = "domainUpDown1";
+            domainUpDown1.Size = new Size(120, 23);
+            domainUpDown1.TabIndex = 9;
             // 
             // Form1
             // 
@@ -250,12 +386,14 @@
             Login.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)imgPicture1).EndInit();
             tabControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)bindingSource2).EndInit();
+            Banco.ResumeLayout(false);
+            Configuraçoes.ResumeLayout(false);
+            Configuraçoes.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-        private BindingSource bindingSource1;
         private TabPage Registro;
         private PictureBox pictureBox2;
         private Button btnRegistrar;
@@ -273,6 +411,20 @@
         private Label label2;
         private Label label1;
         private TabControl tabControl1;
-        private BindingSource bindingSource2;
+        public BindingSource bindingSource1;
+        private TabPage Banco;
+        private TabPage Configuraçoes;
+        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn ID;
+        private DataGridViewTextBoxColumn Senha;
+        private DataGridViewTextBoxColumn Email;
+        private DomainUpDown domainUpDown1;
+        private TextBox textBox3;
+        private TextBox textBox2;
+        private TextBox textBox1;
+        private Label label9;
+        private Label label8;
+        private Label label7;
+        private Label label4;
     }
 }

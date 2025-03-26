@@ -36,5 +36,10 @@ namespace Projeto._1
         {
 
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
